@@ -1,6 +1,8 @@
 
 import './App.css'
-import Mynav from "./Mynav"
+import Mynav from "./Nav"
+import Mycarousel from "./MyCarousel"
+import Title from "./Title"
 
 const App = () => {
 
@@ -8,7 +10,8 @@ const App = () => {
     <>
       <div>
         <Mynav />
-        
+        <Title />
+        <Mycarousel />
       </div>
     </>
   )
