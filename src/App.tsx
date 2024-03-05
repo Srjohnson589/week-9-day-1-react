@@ -1,11 +1,15 @@
 
 import './App.css'
+import Mynav from "./Mynav"
 
-function App() {
-  
+const App = () => {
+
   return (
     <>
-      
+      <div>
+        <Mynav />
+        
+      </div>
     </>
   )
 }
