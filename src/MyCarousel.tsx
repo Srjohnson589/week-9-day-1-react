@@ -1,30 +1,28 @@
 import Carousel from 'react-bootstrap/Carousel';
-import ExampleCarouselImage from 'components/ExampleCarouselImage';
+import Sunflower from './components/sunflower.jpg';
+import Tulips from './components/tulips.webp'
+import Wildflowerfield from './components/wildflower-field.jpeg'
+import "./MyCarousel.css"
 
 function MyCarousel() {
   return (
     <Carousel>
-      <Carousel.Item interval={1000}>
-        <ExampleCarouselImage text="First slide" />
+      <Carousel.Item interval={20000}>
+        <img className="carousel-img" src={Sunflower} />
         <Carousel.Caption>
-          <h3>First slide label</h3>
-          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+          <h3>Sunflowers</h3>
         </Carousel.Caption>
       </Carousel.Item>
-      <Carousel.Item interval={500}>
-        <ExampleCarouselImage text="Second slide" />
+      <Carousel.Item interval={20000}>
+      <img className="carousel-img" src={Tulips} />
         <Carousel.Caption>
-          <h3>Second slide label</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <h3>Tulips</h3>
         </Carousel.Caption>
       </Carousel.Item>
-      <Carousel.Item>
-        <ExampleCarouselImage text="Third slide" />
+      <Carousel.Item interval={20000}>
+      <img className="carousel-img" src={Wildflowerfield} />
         <Carousel.Caption>
-          <h3>Third slide label</h3>
-          <p>
-            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-          </p>
+          <h3>Wildflowers</h3>
         </Carousel.Caption>
       </Carousel.Item>
     </Carousel>

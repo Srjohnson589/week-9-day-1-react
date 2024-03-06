@@ -9,7 +9,7 @@ const Nav = () => {
           <Navbar.Brand href="#home">
             <img
               alt=""
-              src="/img/logo.svg"
+              src="/src/components/heart.webp"
               width="30"
               height="30"
               className="d-inline-block align-top"
